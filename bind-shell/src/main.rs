@@ -4,8 +4,6 @@ use std::process::{Command, Stdio};
 use std::thread;
 
 //function to handle incoming tcp connections
-//All the modules are objects! Holy shit! Object Oriented programming is so easy to understand!
-//Please ignore that note above, it is there for my own amusement
 fn handle_client(stream: TcpStream) {
     let fd = stream.as_raw_fd(); // tcpstream object as raw file descriptor
 
